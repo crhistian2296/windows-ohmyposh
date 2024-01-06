@@ -5,12 +5,13 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 # Alias generales
 Set-Alias pn pnpm
 Set-Alias g git
+Set-Alias y yarn
 
 # Alias git
 function gacp($message) {git add . && git commit -m "$message" && git push}
-function gco($message) {git commit -m "$message"}
+function gc($message) {git commit -m "$message"}
 function gst() {git status}
-function gaa() {git add .}
+function ga() {git add .}
 function gpush() {git push}
 function gb($branch) {git branch $branch}
 function gbdel($branch) {git branch -D $branch}
