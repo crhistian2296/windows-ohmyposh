@@ -18,6 +18,12 @@ function gbdel($branch) {git branch -D $branch}
 function gsw($branch) {git switch $branch}
 function gswb() {git switch -}
 
+# Alias bun
+function brd() { pnpm run dev }
+function brs() { pnpm start }
+function brb() { pnpm run build }
+function brt() { pnpm run test }
+
 # Alias pnpm
 function prd() { pnpm run dev }
 function prs() { pnpm start }
